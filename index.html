@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa - Andersonzim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="app">
+        <!-- ETAPA 1: TELA DE TROLAGEM -->
+        <section id="stage-1" class="screen active hack-theme">
+            <div class="hack-content">
+                <h1 class="blink-text">VOCÊ FOI HACKEADO</h1>
+                <p>Clique no botão abaixo para ser salvo</p>
+                <button id="btn-save" class="hack-btn">SER SALVO AGORA</button>
+            </div>
+        </section>
+
+        <!-- ETAPA 2: QUEBRA DA TENSÃO -->
+        <section id="stage-2" class="screen hidden pink-theme">
+            <div class="content-center fade-in">
+                <h2>Valeu, Andersonzim</h2>
+                <h1 class="highlight-name animate-slide-up">Andersonzim</h1>
+                <p class="subtitle">(professor mais mídia)</p>
+                <button id="btn-continue-1" class="main-btn">Continuar</button>
+            </div>
+        </section>
+
+        <!-- ETAPA 3: HOMENAGEM INICIAL -->
+        <section id="stage-3" class="screen hidden pink-theme">
+            <div class="content-center">
+                <div class="tribute-messages">
+                    <p class="msg" style="--delay: 0s">Pelos 3 anos de aula que o sr proporcionou pra nós...</p>
+                    <p class="msg" style="--delay: 2s">Muito aprendizado, paciência e boas histórias.</p>
+                    <p class="msg" style="--delay: 4s">Como eu tirei o sr no amigo secreto, fiz esse presente.</p>
+                </div>
+                <button id="btn-history" class="main-btn hidden-initially">Ver nossa história</button>
+            </div>
+        </section>
+
+        <!-- ETAPA 4: LINHA DO TEMPO -->
+        <section id="stage-4" class="screen hidden timeline-theme">
+            <div class="container">
+                <h2 class="timeline-title">Momentos Mídia</h2>
+
+                <div class="timeline-content single-mode">
+                    <p style="text-align: center; margin-bottom: 30px;">
+                        As melhores lembranças e resenhas registradas.
+                    </p>
+
+                    <div class="carousel" id="carousel-media">
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide">
+                                    <img src="img/foto1.jpg" alt="Foto da Turma" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto2.jpg" alt="Meme" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto3.jpg" alt="Turma com Professor" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto4.jpg" alt="Selfie" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto5.jpg" alt="Outra foto da turma" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto6.jpg" alt="Outra foto da turma" class="real-img">
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="img/foto7.jpg" alt="Outra foto da turma" class="real-img">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-btn prev-btn">❮</button>
+                        <button class="carousel-btn next-btn">❯</button>
+                        <div class="carousel-nav">
+                            <button class="carousel-indicator current-slide"></button>
+                            <button class="carousel-indicator"></button>
+                            <button class="carousel-indicator"></button>
+                            <button class="carousel-indicator"></button>
+                            <button class="carousel-indicator"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <button id="btn-finish" class="main-btn">Concluir Jornada</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ETAPA FINAL: ENCERRAMENTO -->
+        <section id="stage-final" class="screen hidden pink-theme">
+            <div class="content-center fade-in">
+                <h1>Obrigado por tudo, professor.</h1>
+                <p>Sua dedicação marcou nossa trajetória.</p>
+                <button id="btn-gift" class="final-btn">Acessar o presente</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
